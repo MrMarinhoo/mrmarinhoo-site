@@ -8,18 +8,14 @@ document.getElementById('year').textContent = new Date().getFullYear();
   layer.setAttribute('aria-hidden', 'true');
   document.body.appendChild(layer);
 
-  const updateMobileStart = () => {
-    if (window.innerWidth > 780) {
-      layer.style.removeProperty('--notes-top');
-      return;
-    }
+  const updateNotesStart = () => {
     const actions = document.querySelector('.hero .actions');
     if (!actions) return;
-    const bottom = actions.getBoundingClientRect().bottom + 12;
+    const bottom = actions.getBoundingClientRect().bottom + (window.innerWidth <= 780 ? 12 : 18);
     layer.style.setProperty('--notes-top', Math.max(0, bottom) + 'px');
   };
-  updateMobileStart();
-  window.addEventListener('resize', updateMobileStart, {passive:true});
+  updateNotesStart();
+  window.addEventListener('resize', updateNotesStart, {passive:true});
 
   const symbols = ['♪', '♫', '♩', '♬'];
   let notes = [];
@@ -93,7 +89,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    updateMobileStart();
+    updateNotesStart();
     const delta = y - lastY;
     lastY = y;
     if (delta) wake(delta);
