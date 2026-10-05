@@ -46,3 +46,8 @@
   .portrait img{left:auto;right:-30px;transform:none}
   .halo{left:auto;right:-10px}
 }
+
+/* Optical footer alignment */
+@media(min-width:781px){
+  body>footer>img{transform:translateY(-5px)}
+}
