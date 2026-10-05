@@ -51,3 +51,8 @@
 @media(min-width:781px){
   body>footer>img{transform:translateY(-5px)}
 }
+
+/* TOC: lower home copyright by 2px */
+@media(min-width:781px){
+  body>footer>p{transform:translateY(2px)}
+}
