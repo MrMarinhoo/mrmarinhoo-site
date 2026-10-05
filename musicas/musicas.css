@@ -105,3 +105,10 @@
     transform:translate(-50%,-50%)!important;
   }
 }
+
+/* TOC: correct X relative to centered footer container */
+@media(min-width:1100px){
+  .music-page footer>img{
+    left:65vw!important;
+  }
+}
