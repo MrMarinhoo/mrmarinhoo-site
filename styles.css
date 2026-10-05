@@ -51,3 +51,17 @@
   .nav nav a{display:none}
   .nav nav a[href="musicas/"]{display:block;color:var(--accent);font-size:.62rem}
 }
+
+/* Mobile header refinement: true centered, lighter brand */
+@media(max-width:780px){
+  .nav .brand{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  .nav .brand img{
+    width:145px;
+    opacity:.82;
+  }
+}
