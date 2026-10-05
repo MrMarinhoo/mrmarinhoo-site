@@ -7,3 +7,7 @@
 .portrait img{z-index:30}
 .release{position:relative;z-index:25}
 .about,.links,footer{position:relative;z-index:21}
+
+/* Random note styles — authoritative override */
+.scroll-notes span{left:auto;top:auto;font-size:inherit}
+@media(min-width:781px){.scroll-notes span{color:rgba(242,242,239,.10)}}
