@@ -37,3 +37,12 @@
 @media(min-width:781px){
   .portrait img{transform:none}
 }
+
+/* Restore original desktop hero composition */
+@media(min-width:781px){
+  .hero{grid-template-columns:1.05fr .95fr}
+  .hero-copy{grid-column:1;grid-row:1}
+  .portrait{grid-column:2;grid-row:1}
+  .portrait img{left:auto;right:-30px;transform:none}
+  .halo{left:auto;right:-10px}
+}
