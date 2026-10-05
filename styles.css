@@ -32,3 +32,8 @@
   .portrait img{right:auto;left:-30px;transform:scaleX(-1);transform-origin:center bottom}
   .halo{right:auto;left:-10px}
 }
+
+/* Keep original portrait direction in inverted desktop hero */
+@media(min-width:781px){
+  .portrait img{transform:none}
+}
