@@ -120,3 +120,17 @@
 
 /* TOC: final signature X fine-tune */
 @media(min-width:1100px){.music-page footer>img{left:61vw!important}}
+
+/* Mobile music header: centered, lighter brand */
+@media(max-width:780px){
+  .music-page .nav .brand{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  .music-page .nav .brand img{
+    width:145px;
+    opacity:.82;
+  }
+}
