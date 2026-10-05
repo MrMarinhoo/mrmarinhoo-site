@@ -69,3 +69,12 @@
     white-space:nowrap;
   }
 }
+
+/* TOC: align footer signature over the portrait's blazer */
+@media(min-width:1100px){
+  .music-page footer>img{
+    right:auto!important;
+    left:76vw!important;
+    transform:translate(-50%,-50%)!important;
+  }
+}
