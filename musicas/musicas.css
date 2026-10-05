@@ -37,14 +37,35 @@
   .music-page footer p{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;margin:0!important;text-align:center!important;white-space:nowrap}
 }
 
-/* Footer logo reveal: hidden until the actual footer reaches the viewport */
+
+/* Final footer composition — logo exists only inside the footer */
 @media(min-width:1100px){
-  .music-page footer>img{
-    visibility:hidden!important;
-    opacity:0!important;
+  .music-page footer{
+    display:block!important;
+    min-height:110px;
+    position:relative!important;
+    z-index:5;
   }
-  .music-page footer.footer-in-view>img{
+  .music-page footer>img{
+    display:block!important;
     visibility:visible!important;
+    position:absolute!important;
+    left:auto!important;
+    right:calc(19.5vw - 80px)!important;
+    top:50%!important;
+    width:160px!important;
+    height:auto!important;
+    margin:0!important;
     opacity:.42!important;
+    transform:translateY(-50%)!important;
+  }
+  .music-page footer p{
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    margin:0!important;
+    text-align:center!important;
+    white-space:nowrap;
   }
 }
