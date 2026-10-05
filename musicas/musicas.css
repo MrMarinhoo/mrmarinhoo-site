@@ -1,0 +1,16 @@
+.music-page .nav nav .active{color:var(--accent)}
+.catalog-hero{padding:110px 0 105px}
+.catalog-hero h1{font-family:"Google Sans Flex",Arial,Helvetica,sans-serif;font-weight:700;font-size:clamp(3.6rem,7vw,7rem);line-height:.91;letter-spacing:-.055em;margin:0;max-width:980px}
+.catalog-hero>p:last-child{max-width:690px;color:var(--muted);font-size:1.12rem;margin:32px 0 0}
+.catalog{padding:10px 0 110px}
+.catalog-song{display:grid;grid-template-columns:62px minmax(0,760px);gap:18px;padding:0 0 78px}
+.catalog-number{color:var(--accent);font-size:.72rem;font-weight:700;letter-spacing:.16em;padding-top:12px}
+.catalog-song h2{font-family:"Google Sans Flex",Arial,Helvetica,sans-serif;font-weight:700;font-size:clamp(2rem,4vw,3.8rem);line-height:1;letter-spacing:-.04em;margin:0}
+.catalog-song p{color:var(--muted);max-width:690px;margin:14px 0 17px;font-size:1rem}
+.catalog-links{display:flex;gap:25px;flex-wrap:wrap}
+.catalog-links a{color:var(--ink);text-decoration:none;text-transform:uppercase;letter-spacing:.11em;font-size:.7rem;font-weight:800}
+.catalog-links a:hover,.catalog-links a:focus-visible{color:var(--accent)}
+.other-recordings{padding:35px 0 95px}
+.other-recordings>.eyebrow{margin-bottom:35px}
+.cover-song{padding-bottom:0}
+@media(max-width:780px){.music-page .nav{justify-content:flex-end}.music-page .nav .brand{left:14px;transform:none}.music-page .nav nav{display:flex;gap:16px}.music-page .nav nav a{font-size:.62rem}.music-page .nav nav a:not(.active){display:none}.catalog-hero{padding:75px 0 80px}.catalog-hero h1{font-size:clamp(3rem,14vw,5rem)}.catalog-hero>p:last-child{font-size:1rem}.catalog{padding-bottom:55px}.catalog-song{grid-template-columns:36px 1fr;gap:10px;padding-bottom:58px}.catalog-number{padding-top:7px}.catalog-song h2{font-size:clamp(2rem,10vw,3rem)}.catalog-song p{font-size:.95rem;margin-top:12px}.other-recordings{padding:20px 0 75px}}
