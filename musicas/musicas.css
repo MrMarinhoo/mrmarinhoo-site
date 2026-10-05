@@ -87,3 +87,12 @@
     transform:translate(-50%,-50%)!important;
   }
 }
+
+/* TOC: match the original accidental placement — centered on lower torso */
+@media(min-width:1100px){
+  .music-page footer>img{
+    left:72.5vw!important;
+    top:-72px!important;
+    transform:translate(-50%,-50%)!important;
+  }
+}
