@@ -34,4 +34,14 @@
 <section class="other-recordings wrap"><p class="eyebrow">OUTRAS GRAVAÇÕES</p><article class="catalog-song cover-song"><span class="catalog-number">—</span><div><h2>Hey, That's No Way to Say Goodbye</h2><p>Uma interpretação de uma canção que faz parte das minhas referências musicais.</p><div class="catalog-links"><a href="https://www.youtube.com/watch?v=wIw7GPboexU" target="_blank" rel="noopener">YouTube ↗</a></div></div></article></section>
 </main>
 <footer class="wrap"><img src="../assets/logo-white.png" alt="MrMarinhoo"><p>© 2026 MrMarinhoo. Site oficial.</p></footer>
+<script>
+(() => {
+  const footer = document.querySelector('footer');
+  if (!footer) return;
+  const observer = new IntersectionObserver(([entry]) => {
+    footer.classList.toggle('footer-in-view', entry.isIntersecting);
+  }, { threshold: 0.05 });
+  observer.observe(footer);
+})();
+</script>
 </body></html>
