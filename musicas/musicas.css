@@ -78,3 +78,12 @@
     transform:translate(-50%,-50%)!important;
   }
 }
+
+/* TOC: final signature placement on the chest, matching the earlier visual */
+@media(min-width:1100px){
+  .music-page footer>img{
+    left:72.5vw!important;
+    top:18px!important;
+    transform:translate(-50%,-50%)!important;
+  }
+}
