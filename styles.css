@@ -43,3 +43,11 @@
 @media(min-width:781px){
   body>footer>p{transform:translateY(2px)}
 }
+
+/* Mobile home navigation: keep catalog accessible */
+@media(max-width:780px){
+  .nav{justify-content:flex-end}
+  .nav nav{display:flex;gap:16px}
+  .nav nav a{display:none}
+  .nav nav a[href="musicas/"]{display:block;color:var(--accent);font-size:.62rem}
+}
