@@ -60,4 +60,4 @@
 }
 
 /* Official contact */
-.contact-link{display:block;width:fit-content;margin:34px auto 0;color:var(--muted);text-decoration:none;text-transform:uppercase;font-size:.68rem;letter-spacing:.16em;font-weight:700;transition:color .18s ease}.contact-link:hover,.contact-link:focus-visible{color:var(--ink)}.site-contact{padding:0 0 8px;text-align:center}.site-contact .contact-link{margin:0 auto}@media(prefers-reduced-motion:reduce){.contact-link{transition:none}}
+.contact-link,.contact-link:link,.contact-link:visited{display:block;width:fit-content;margin:34px auto 0;color:var(--muted);text-decoration:none;text-transform:uppercase;font-size:.68rem;letter-spacing:.16em;font-weight:700;transition:color .18s ease}.contact-link:hover,.contact-link:focus-visible,.contact-link:active{color:var(--ink);text-decoration:none}.site-contact{padding:0 0 8px;text-align:center}.site-contact .contact-link{margin:0 auto}@media(prefers-reduced-motion:reduce){.contact-link{transition:none}}
