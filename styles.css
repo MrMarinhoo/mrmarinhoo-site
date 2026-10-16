@@ -66,3 +66,7 @@
 body:not(.music-page)>footer>.footer-brand{grid-column:2;justify-self:center;display:block;width:160px}
 body:not(.music-page)>footer>.footer-brand img{display:block;width:160px;opacity:.5}
 @media(max-width:780px){body:not(.music-page)>footer>.footer-brand{width:160px;margin:0 auto}}
+
+/* Catalog CTA below featured player */
+.music-page-cta,.music-page-cta:link,.music-page-cta:visited{margin-top:34px;color:var(--accent);background:transparent;border-color:var(--accent)}
+.music-page-cta:hover,.music-page-cta:focus-visible,.music-page-cta:active{color:#050505;background:var(--accent);text-decoration:none}
